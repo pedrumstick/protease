@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo blastpgp "$@" >> /tmp/blastpgp.log
+legacy_blast.pl blastpgp --path /usr/local/bin "$@" 2>/tmp/legacy_blast.log
+
